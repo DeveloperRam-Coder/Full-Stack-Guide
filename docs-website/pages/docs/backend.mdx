@@ -1,0 +1,23 @@
+
+Similarly, create `backend.mdx` for backend documentation.
+
+---
+
+### 7. Futuristic Enhancements & Features
+
+- **Dynamic Sidebar & Routing:**  
+  As your documentation grows, implement a sidebar (in `components/Sidebar.js`) that reads your MDX files and dynamically generates navigation links.
+
+- **Smooth Transitions & Animations:**  
+  Use Framer Motion to animate page transitions and content loading for a modern feel.
+  
+  Example:
+  ```jsx
+  // Example usage in a page/component
+  import { motion } from 'framer-motion'
+  
+  const MotionBox = motion.custom(Box)
+  
+  <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
+    {content}
+  </MotionBox>
